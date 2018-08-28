@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import "./App.scss";
 
-class App extends Component {
+import s from "./Recipes.scss";
+
+export default class Recipes extends Component {
   render() {
     return (
       <div>
-        <h1>Hello WOrld</h1>
+        <h1>Recipes</h1>
       </div>
     );
   }
 }
-
-export default App;
