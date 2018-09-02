@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:800');
+
+$interface-color: #525252, rgba(66, 66, 66, 0.6);
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main_container {
+  background-image: url("../../images/hd_minecraft_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  .homePage {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    
+    .header {
+      margin-top: 5%;
+      position: relative;
+      width: 85%;
+    }
+
+    .homeEntrance {
+      height: 40%;
+      margin: 0 auto;
+      margin-top: 5%;
+      position: relative;
+      transition: all .5s;
+      width: 30%;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }  
+  }
+  
+  .interface {
+    bottom: 0;
+    box-sizing: border-box;
+    color: #f4f4f4;
+    height: 80vh;
+    left: 0;
+    margin: auto;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80vw;
+
+    .content {
+      background: (nth($interface-color, 1));
+      border-bottom: 3px solid rgba(66, 66, 66, 0.6);
+      border-right: 3px solid rgba(66, 66, 66, 0.6);
+      border-top: 3px solid rgba(66, 66, 66, 0.6);
+      box-sizing: border-box;
+      height: 100%;
+      margin-left: 5%;
+      padding: 5vh 5vw 5vh 5vw;
+      position: relative;
+      z-index: -2;
+
+      &:before {
+        bottom: 0;
+        box-shadow: 1px 1px 6px 6px rgba(25, 25, 25, 0.4);
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -2;
+      }
+    }
+
+    .navbar {
+      float: left;
+      height: 100%;
+      position: relative;
+      width: 5%;
+
+      .tab {
+        background: (nth($interface-color, 1));
+        border-bottom: 3px solid rgba(66, 66, 66, 0.6);
+        border-bottom-left-radius: 10%;
+        border-left: 3px solid rgba(66, 66, 66, 0.6);
+        border-right: 1px solid rgba(66, 66, 66, 0.6);
+        border-top: 3px solid rgba(66, 66, 66, 0.6);
+        border-top-left-radius: 10%;
+        box-shadow: -1px 1px 6px 4px rgba(25, 25, 25, 0.4);
+        box-sizing: border-box;
+        height: 9%;
+        padding: 10%;
+        position: relative;
+        width: 100%;
+
+        &:not(:first-child) {
+          margin-top: 5vh;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          height: 100%;
+          margin: 0 auto;
+          position: relative;
+          transition: all .25s;
+          width: 100%;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
